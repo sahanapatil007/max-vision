@@ -1,0 +1,459 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+body {
+    margin: 0;
+    height: 100vh;
+    background: #021027;
+    position: relative;
+    color: white;
+}
+
+/* ★ Stars layer */
+body::before {
+    content: "";
+    position: absolute;
+    width: 100vh;
+    height: 100vw;
+    pointer-events: none;
+
+    background-image:
+        radial-gradient(2px 2px at 20% 30%, white, transparent),
+        radial-gradient(2px 2px at 80% 20%, white, transparent),
+        radial-gradient(2.5px 2.5px at 50% 70%, white, transparent),
+        radial-gradient(2px 2px at 30% 80%, white, transparent),
+        radial-gradient(2px 2px at 60% 10%, white, transparent),
+        radial-gradient(2px 2px at 70% 90%, white, transparent),
+        radial-gradient(2px 2px at 30% 50%, white, transparent),
+        radial-gradient(2.5px 2.5px at 40% 20%, white, transparent),
+        radial-gradient(2px 2px at 70% 40%, white, transparent),
+        radial-gradient(2px 2px at 20% 10%, white, transparent);
+
+    background-repeat: repeat;
+    background-size: cover;
+
+    animation: twinkle 4s ease-in-out infinite;
+    opacity: 0.8;
+}
+
+
+
+@keyframes twinkle {
+
+    0%,
+    100% {
+        opacity: 0.4;
+    }
+
+    50% {
+        opacity: 1;
+    }
+}
+
+
+
+.page1 {
+    height: 140vh;
+    width: 100vw;
+    position: relative;
+}
+
+.nav {
+    height: 10%;
+    width: 100%;
+    position: absolute;
+    display: flex;
+    padding: 0.3rem;
+    gap: 10%;
+}
+
+.nav>.nav-right {
+    width: 20%;
+}
+
+.nav>.nav-left {
+    width: 70%;
+    display: flex;
+    align-items: center;
+    padding-left: 30%;
+    justify-content: space-evenly;
+}
+
+.nav>.nav-left>a {
+    text-decoration: none;
+    text-transform: capitalize;
+    color: white;
+    font-size: 18px;
+}
+
+
+/* ------------------ image ---------------*/
+.page1>.image-cont {
+    height: 90%;
+    width: 100%;
+    margin-top: 30px;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.image-cont>.image-cont2 {
+    height: 80%;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-cont2>.image-row {
+    height: 100%;
+    width: 30%;
+    margin: 8px;
+    border-radius: 6px;
+}
+
+.image-cont2>.image-row1 {
+    height: 100%;
+    width: 30%;
+    margin: 8px;
+    border-radius: 6px;
+}
+
+.image-cont2>.image-row2 {
+    height: 100%;
+    width: 30%;
+    margin: 8px;
+    border-radius: 6px;
+}
+
+.image-row>.img1 {
+    height: 40%;
+    width: 100%;
+    margin: 8px;
+    border-radius: 6px;
+    background-color: black;
+}
+
+.image-row>.img2 {
+    height: 60%;
+    width: 100%;
+    margin: 8px;
+    border-radius: 6px;
+    background-color: brown;
+}
+
+.image-row1>.img3 {
+    height: 50%;
+    width: 100%;
+    margin: 8px;
+    border-radius: 6px;
+    background-color: blueviolet;
+}
+
+.image-row1>.img4 {
+    height: 50%;
+    width: 100%;
+    margin: 8px;
+    border-radius: 6px;
+    background-color: blue;
+}
+
+.image-row2>.img5 {
+    height: 45%;
+    width: 100%;
+    margin: 8px;
+    border-radius: 6px;
+    background-color: yellowgreen;
+}
+
+.image-row2>.img6 {
+    height: 55%;
+    width: 100%;
+    margin: 8px;
+    border-radius: 6px;
+    background-color: yellow;
+}
+
+.img6>img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    background-position: center;
+}
+
+.img1>img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    background-position: center;
+}
+
+.img2>img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    background-position: center;
+}
+
+.img3>img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    background-position: center;
+}
+
+.img4>img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    background-position: center;
+}
+
+.img5>img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    background-position: center;
+}
+
+/*---------------------------------- page2----------------------------*/
+
+.page2 {
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    display: flex;
+    justify-content: center;
+
+}
+
+.page2>.category {
+    height: 80%;
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+.category>.section {
+    height: 90%;
+    width: 80%;
+    position: relative;
+    transition: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+.section>.top {
+    height: 15%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.top>p:hover {
+    background-color: antiquewhite;
+    transition: 1s smooth;
+}
+
+.section>.down {
+    height: 80%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.down>#men {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    z-index: 1;
+}
+
+#men>.row1 {
+    height: 80%;
+    width: 24%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+}
+
+.row1>img {
+    height: 70%;
+    width: 90%;
+    border-radius: 50%;
+}
+
+.down>#women {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    z-index: -1;
+}
+
+#women>.row1 {
+    height: 80%;
+    width: 24%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+}
+
+.row1>img {
+    height: 70%;
+    width: 90%;
+    border-radius: 50%;
+}
+
+/*---------------------------- page3 ------------------------------*/
+.page3 {
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+}
+
+.page3>.size {
+    height: 90%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.size>.image-cont3 {
+    height: 90%;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: row;
+}
+
+.image-cont3>.image1 {
+    height: 100%;
+    width: 32%;
+    text-align: center;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+}
+
+.image1>button {
+    border-radius: 5%;
+    border: 1px solid gray;
+    padding: 0.5rem;
+}
+
+.image1>img {
+    height: 90%;
+    width: 100%;
+}
+
+/*---------------------------------- page4-----------------------------------*/
+.page4 {
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.page4>#about {
+    height: 80%;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+
+}
+
+#about>.about-top {
+    height: 100%;
+    width: 40%;
+}
+
+.about-top>img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+}
+
+#about>.about-down {
+    margin-top: 10%;
+    height: 100%;
+    width: 50%;
+    text-align: center;
+    font-size: 25px;
+}
+
+/*------------------------------------ footer ------------------------------- */
+
+footer {
+    height: 80vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.49);
+}
+
+footer>.foot-up {
+    height: 70%;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.foot-up>.foot1 {
+    height: 90%;
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    flex-direction: column;
+}
+
+.foot1>h3 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
