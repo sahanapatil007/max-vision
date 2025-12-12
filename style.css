@@ -139,7 +139,7 @@ body::before {
     width: 100%;
     margin: 8px;
     border-radius: 6px;
-    background-color: black;
+    background-color: #021027;
 }
 
 .image-row>.img2 {
@@ -147,7 +147,7 @@ body::before {
     width: 100%;
     margin: 8px;
     border-radius: 6px;
-    background-color: brown;
+    background-color: #021027;
 }
 
 .image-row1>.img3 {
@@ -155,7 +155,7 @@ body::before {
     width: 100%;
     margin: 8px;
     border-radius: 6px;
-    background-color: blueviolet;
+    background-color:#021027;
 }
 
 .image-row1>.img4 {
@@ -163,7 +163,7 @@ body::before {
     width: 100%;
     margin: 8px;
     border-radius: 6px;
-    background-color: blue;
+    background-color: #021027;
 }
 
 .image-row2>.img5 {
@@ -171,7 +171,7 @@ body::before {
     width: 100%;
     margin: 8px;
     border-radius: 6px;
-    background-color: yellowgreen;
+    background-color:#021027;
 }
 
 .image-row2>.img6 {
@@ -179,7 +179,7 @@ body::before {
     width: 100%;
     margin: 8px;
     border-radius: 6px;
-    background-color: yellow;
+    background-color: #021027;
 }
 
 .img6>img {
@@ -363,12 +363,15 @@ body::before {
 }
 
 .image-cont3>.image1 {
-    height: 100%;
+    height: 80%;
     width: 32%;
-    text-align: center;
-    border: 1px solid rgba(0, 0, 0, 0.1);
-    border-radius: 12px;
-    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+     display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.811);
+    border: 1px solid rgba(226, 212, 212, 0.1);
+    box-shadow: 0 6px 16px rgba(224, 218, 218, 0.1);
 }
 
 .image1>button {
@@ -378,8 +381,9 @@ body::before {
 }
 
 .image1>img {
-    height: 90%;
-    width: 100%;
+    height: 70%;
+    width: 80%;
+    border-radius: 50%;
 }
 
 /*---------------------------------- page4-----------------------------------*/

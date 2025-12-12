@@ -16,3 +16,21 @@ menBtn.addEventListener("click", () => showSection(men));
 womenBtn.addEventListener("click", () => showSection(women));
 
 
+
+gsap.to('#img1',{
+  y:-10,
+  duration:4,
+  ease:"power2.out"
+});
+
+gsap.to('#img2',{
+  y:10,
+  duration:4,
+  ease:"power2.out"
+});
+
+gsap.to('#img3',{
+  y:-10,
+  duration:4,
+  ease:"power2.out"
+});
