@@ -155,7 +155,7 @@ body::before {
     width: 100%;
     margin: 8px;
     border-radius: 6px;
-    background-color:#021027;
+    background-color: #021027;
 }
 
 .image-row1>.img4 {
@@ -171,7 +171,7 @@ body::before {
     width: 100%;
     margin: 8px;
     border-radius: 6px;
-    background-color:#021027;
+    background-color: #021027;
 }
 
 .image-row2>.img6 {
@@ -365,7 +365,7 @@ body::before {
 .image-cont3>.image1 {
     height: 80%;
     width: 32%;
-     display: flex;
+    display: flex;
     align-items: center;
     justify-content: space-evenly;
     flex-direction: column;
@@ -428,6 +428,43 @@ body::before {
     text-align: center;
     font-size: 25px;
 }
+
+/*---------------------- page4 -------------------------------*/
+.page5 {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    gap: 20px;
+}
+
+.card1 {
+    height: 80%;
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background-color: #071d44;
+    flex-direction: column;
+}
+.card{
+    height: 60%;
+    width: 80%;
+    position: relative;
+    border: 1px solid grey;
+}
+.card>img{
+    height: 80%;
+    width:70%;
+    position: absolute;
+    bottom: 0;
+    left: 40px;
+    border-radius: 50%;
+}
+
 
 /*------------------------------------ footer ------------------------------- */
 
